@@ -8,8 +8,8 @@ def setup_config():
 
     # 输入预约日期
     # date = input("请输入预约日期 (格式: YYYY-MM-DD): ")
-    date = '2024-09-27'
-    Config.BOOKING_DATA['date'] = date
+    # date = '2024-09-27'
+    # Config.BOOKING_DATA['date'] = date
 
     # 输入场馆类型
     # serviceid = input("请输入场馆类型 (serviceid): ")
@@ -18,8 +18,8 @@ def setup_config():
 
     # 输入预约时间段
     # time_slot = input("请输入预约时间段 (格式: HH:MM-HH:MM): ")
-    time_slot = '20:01-21:00'
-    Config.BOOKING_DATA['time_slot'] = time_slot
+    # time_slot = '20:01-21:00'
+    # Config.BOOKING_DATA['time_slot'] = time_slot
 
     # 输入场地编号
     # stockid = input("请输入场地编号 (stockid): ")
