@@ -49,7 +49,7 @@ class Booking:
 
     def pre_book(self):
         global cnt
-        if cnt == 5:
+        if cnt == 50:
             return
         # 准备预约请求数据 (将其 URL 编码)
 
@@ -69,8 +69,13 @@ class Booking:
                 print(f"预约失败：{result['message']}")
             else:
                 print(f"其他错误：{result['message']}")
+                cnt += 1
+                self.pre_book()
         else:
             print(f"请求失败，状态码: {response.status_code}")
+            print(response.json()['message'])
+            cnt += 1
+            self.pre_book()
 
 
     @staticmethod

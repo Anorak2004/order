@@ -1,5 +1,5 @@
-from order.book import Booking
+from book import Booking
 
 if __name__ == '__main__':
-    book = Booking(stockid="10564",serviceid="22", users="22011202", username="22011201", password="160571")
+    book = Booking(stockid="10649",serviceid="22", id="147132", users="160734", username="22011207", password="040019")
     book.pre_book()
