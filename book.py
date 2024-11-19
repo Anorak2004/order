@@ -73,7 +73,6 @@ class Booking:
                 self.pre_book()
         else:
             print(f"请求失败，状态码: {response.status_code}")
-            print(response.json()['message'])
             cnt += 1
             self.pre_book()
 
