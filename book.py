@@ -57,7 +57,14 @@ class Booking:
         response = self.session.post(self.book_url, data=self.encoded_payload, headers=self.headers)
         # 处理响应
         if response.status_code == 200:
-            result = response.json()
+            try:
+                result = response.json()
+            except Exception as e:
+                print("fail to convert!")
+                print(response.content)
+                cnt += 1
+                self.pre_book()
+                raise e
             if result['result'] == '1':
                 print("预约成功！")
                 print(result['message'])
