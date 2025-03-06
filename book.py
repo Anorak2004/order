@@ -61,7 +61,7 @@ class Booking:
                 result = response.json()
             except Exception as e:
                 print("fail to convert!")
-                print(response.content)
+                print(response.content.decode('utf-8'))
                 cnt += 1
                 self.pre_book()
                 raise e
