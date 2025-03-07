@@ -138,3 +138,6434 @@ Traceback (most recent call last):
   File "/home/Anorak/miniconda3/envs/work/lib/python3.9/site-packages/requests/models.py", line 978, in json
     raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
 requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+登录成功，获取 session
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+fail to convert!
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<input type="hidden" id="contextPath" value="/cgyd"/>
+<input type="hidden" id="ctrlSuffix" value=".html"/>
+<input type="hidden" id="userno" value="160735"/>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title> 场馆预约</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="bookmark" href="favicon.ico">
+  
+
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/style.css" id="bscss"/>
+<link rel="stylesheet" type="text/css" href="/cgyd/themes/mobile/sweetalert.css">
+
+  
+
+
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/jquery-localize-i18n/dist/jquery.localize.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/plugins/sweetalert2/dist/sweetalert-dev.js"></script>
+<script type="text/javascript" src="/cgyd/scripts/common/common.js?v=1.0.0.1"></script> 
+
+
+
+
+
+  <script type="text/javascript" src="/cgyd/scripts/plugins/swipe-js/swipe.js"></script>
+  <script charset="utf-8" src="/cgyd/scripts/home/index.js"></script>
+  <script type="text/javascript"
+	src="/cgyd/scripts/plugins/jquery.qrcode.min.js"></script>
+<script charset="utf-8" src="/cgyd/scripts/comment/scan.js"></script>
+</head>
+
+<body>
+  <div class="wrapper" >
+    <header class="head">
+      <!--<a href="./" class="logo-head"><img src="/cgyd/themes/mobile/images/logo1.png"></a>-->
+      <div class="top-tools"><a href="javascript:login();"><em class="icon-user"></em></a></div>
+    </header>
+<!--     <div class="toolsbar">
+      <ul class="search-ul">
+        <li class="region">南校园<em class="icon-arrow-down"></em></li>
+        <li class="search-input"><input type="text" placeholder="输入商户名"></li>
+      </ul>
+    </div> -->
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap" onclick="pay()">
+        <div><img src="/cgyd/images/b1.jpg"></div>
+      <!--   <div><img src="/cgyd/images/test00.jpg"></div>
+        <div><img src="/cgyd/images/b1.jpg"></div> -->
+      </div>
+      <ul class="swipe-nav">
+         <!--  <li id="i_0" class="active"></li>
+        <li id="i_1"></li>
+        <li id="i_2"></li> -->
+      </ul>
+    </div>
+    <ul class="home-item-list grid-4 clearfix">
+      
+      
+	     <li class="griditem item-1">
+	       <a href="/cgyd/venue.html?typeid=2">
+	       
+	       
+	       
+	       <img src="/cgyd/images/dj.png" class="item-img">
+	        <span class="name">场地</span>
+	       
+	       
+	       </a>
+	     </li>
+      
+     	
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <!-- add by yucc 20200915 首都师范学院禁止学生点餐 -->
+      
+      <li class="griditem item-2"><!-- <span class="tips-count">3</span> -->
+        <a href="/cgyd/order/orderlist.html"><img src="/cgyd/images/dd.png" class="item-img"><span class="name">我的预约</span></a>
+      </li>
+      
+      	
+      
+    </ul>
+    <section class="query-list">
+      <ul class="switch-tab">
+	   
+       <!--  <li data-index="1"><span>热门场地</span></li> -->
+      </ul>
+      
+       
+        
+      
+    </section>
+  </div>
+  <script>
+  	$("#foodLink").click(function(){
+  		AjaxGet("/sdsfloginCheck",null,function(r){
+  			if(r.result=="0"){
+  				info("请先登录！");
+  			}else{
+  				var user = r.object;
+  				if(user.sno.length!=10){
+  					location.href=(cu("/venue")+"?typeid=3");
+  				}else{
+  					info("该功能仅对教职工开放！")
+  				}
+  			}
+  		},"json");
+  	});
+  </script>
+</body>
+
+</html>
+Traceback (most recent call last):
+  File "/home/Anorak/miniconda3/envs/work/lib/python3.9/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/home/Anorak/miniconda3/envs/work/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/home/Anorak/miniconda3/envs/work/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/Anorak/miniconda3/envs/work/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/Anorak/tools/order/new_order.py", line 5, in <module>
+    book.pre_book()
+  File "/home/Anorak/tools/order/book.py", line 66, in pre_book
+    self.pre_book()
+  File "/home/Anorak/tools/order/book.py", line 66, in pre_book
+    self.pre_book()
+  File "/home/Anorak/tools/order/book.py", line 66, in pre_book
+    self.pre_book()
+  [Previous line repeated 46 more times]
+  File "/home/Anorak/tools/order/book.py", line 67, in pre_book
+    raise e
+  File "/home/Anorak/tools/order/book.py", line 61, in pre_book
+    result = response.json()
+  File "/home/Anorak/miniconda3/envs/work/lib/python3.9/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
