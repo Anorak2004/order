@@ -61,6 +61,8 @@ class Booking:
                 result = response.json()
             except Exception as e:
                 print("fail to convert!")
+                url = 'http://order.njmu.edu.cn:8088/cgyd/product/show.html?id=22'
+                self.session.get(url)
                 print(response.content.decode('utf-8'))
                 cnt += 1
                 self.pre_book()
