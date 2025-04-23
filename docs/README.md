@@ -17,13 +17,14 @@
 ### 安装依赖
 
 ```bash
+.venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
 ### 启动API服务器
 
 ```bash
-python main.py
+uvicorn main:app --reload
 ```
 
 ### 使用命令行工具
